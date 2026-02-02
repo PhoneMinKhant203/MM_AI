@@ -14,7 +14,7 @@ MEDICAL_DISCLAIMER = "ဤအချက်အလက်သည် အထွေထွ
 # LOAD EMBEDDING MODEL
 @st.cache_resource
 def load_embedding_model():
-    return SentenceTransformer("./fine_tuned_burmese_model")
+    return SentenceTransformer("./my_project_data/fine_tuned_burmese_model")
 
 embed_model = load_embedding_model()
 
@@ -22,15 +22,15 @@ embed_model = load_embedding_model()
 # LOAD FAISS DATA
 @st.cache_resource
 def load_medicine():
-    index = faiss.read_index("medicine_faiss.index")
-    with open("medicine_answers.pkl", "rb") as f:
+    index = faiss.read_index("my_project_data/medicine_faiss.index")
+    with open("my_project_data/medicine_answers.pkl", "rb") as f:
         answers = pickle.load(f)
     return index, answers
 
 @st.cache_resource
 def load_agriculture():
-    index = faiss.read_index("agriculture_faiss.index")
-    with open("agriculture_answers.pkl", "rb") as f:
+    index = faiss.read_index("my_project_data/agriculture_faiss.index")
+    with open("my_project_data/agriculture_answers.pkl", "rb") as f:
         answers = pickle.load(f)
     return index, answers
 
