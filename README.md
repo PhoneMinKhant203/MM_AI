@@ -118,26 +118,8 @@ This tool is an **Information Retrieval System**, not a diagnostic tool. In comp
 
 ## 👤 Author
 
-**Phone Min Khant** Computing Project (CET300) - Part Two
+**Phone Min Khant** 
 
 _Focus: AI for Social Impact & Multilingual NLP_
 
-----------
-
-### **How to add this to GitHub:**
-
-1.  On your computer, create a new file named `README.md` (make sure it's exactly that name).
-    
-2.  Paste the text above into it.
-    
-3.  Run these commands:
-    
-    Bash
-    
-    ```
-    git add README.md
-    git commit -m "Added professional README for project documentation"
-    git push origin main
-    
-    ```
     
